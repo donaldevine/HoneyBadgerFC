@@ -1,0 +1,32 @@
+/* Add your CSS styles here */
+body {
+    font-family: bebas-neue, serif;
+}
+
+header {
+    background-color: rgb(241, 168, 14);
+    color: black;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+section {
+    padding: 40px;
+    text-align: center;
+}
+
+footer {
+    background-color: rgb(241, 168, 14);
+    color: black;
+    text-align: left;
+    padding: 10px 0;
+}
