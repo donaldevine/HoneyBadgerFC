@@ -1,12 +1,29 @@
-/* Add your CSS styles here */
+@font-face {
+    font-family:bebas-neue;
+    src:url(https://use.typekit.net/af/f9d226/000000000000000077359f59/30/l?subset_id=2&fvd=n4&v=3) format("woff2"), url(https://use.typekit.net/af/f9d226/000000000000000077359f59/30/d?subset_id=2&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/f9d226/000000000000000077359f59/30/a?subset_id=2&fvd=n4&v=3) format("opentype");
+    font-weight:400;
+    font-style:normal;
+    font-stretch:normal;
+    font-display:auto;
+}
+
 body {
-    font-family: bebas-neue, serif;
+    font-family: 'Bebas Neue', sans-serif;
+    background-color: white;
+    color: black;
 }
 
 header {
     background-color: rgb(241, 168, 14);
-    color: black;
-    padding: 10px 0;
+    color: rgb(241, 168, 14);
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    margin-top: 0;
+    top: 0;
+    position: fixed;
+    width: calc(100% - 30%);
 }
 
 nav ul {
@@ -16,11 +33,11 @@ nav ul {
 
 nav ul li {
     display: inline;
+    margin-left: 20px;
     margin-right: 20px;
 }
 
 section {
-    padding: 40px;
     text-align: center;
 }
 
@@ -29,4 +46,63 @@ footer {
     color: black;
     text-align: left;
     padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%
 }
+
+.left-pane {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 30%;
+    background-image: url("../images/leftPane.gif");
+    height: 100%;
+    overflow-x: hidden;
+    background-color: #111;
+}
+
+.content-pane {
+    position: fixed;
+    left: 30%;
+    top: 0;
+    width: calc(100% - 30%);
+    height: 100%;
+    padding: 0;
+    margin-top: 30px;
+    margin-bottom: 100px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.main-content
+{
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+
+a:link {
+    color: black;
+    text-decoration: underline;
+}
+
+
+a:visited {
+    color: black;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: black;
+    text-decoration: underline;
+    text-shadow: 0 0 1px black;
+}
+
+a:active {
+    color: black;
+    text-decoration: underline;
+}
+
+
